@@ -1,3 +1,7 @@
+// swift-tools-version:5.3
+
+// The swift-tools-version declares the minimum version of Swift required to build this package.
+
 //  The MIT License (MIT)
 //
 //  Copyright © 2017 Saurabh Rane
@@ -20,8 +24,17 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //  SOFTWARE.
 
+
 import PackageDescription
 
 let package = Package(
-    name: "SwiftIcons"
-)
+    name: "SwiftIcons",
+    platforms: [
+        .iOS(.v14)
+    ],
+    products: [
+        .library(name: "SwiftIcons", targets: ["SwiftIcons"])
+    ],
+    targets: [
+        .target(name: "SwiftIcons")
+    ])
