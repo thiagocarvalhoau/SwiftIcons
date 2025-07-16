@@ -30,7 +30,7 @@ import PackageDescription
 let package = Package(
     name: "SwiftIcons",
     platforms: [
-        .iOS(.v14)
+        .iOS(.v17)
     ],
     products: [
         .library(name: "SwiftIcons", targets: ["SwiftIcons"])
